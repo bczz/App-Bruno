@@ -3,89 +3,407 @@
 <head>
 <meta charset="utf-8">
 <title>App Bruno</title>
-<link href="jquery-mobile/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
 <link href="estilo.css" rel="stylesheet" type="text/css"/>
-<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
-<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<script src="jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery.mobile-1.0.min.js" type="text/javascript"></script>
 </head> 
-<body> 
-<!-- Home -->
-<div data-role="page" id="page">
+<body>
 
-     <div data-role="panel" id="panel">
-        <div data-role="content">
-        	<p> Este é o painel do App</p>
+  <!-- PÁGINA 1 -->
+  <div data-role="page" id="home">
+    <div data-role="panel" id="menu">
+      <div data-role="content">
+      	<ul data-position="fixed">
+         <li><a href="#home"><img class="logo" src="logo.png"></a></li>
+         <li><a href="#temakis">Temakis</a></li>
+         <li><a href="#sashimis">Sashimis</a></li>
+         <li><a href="#sushis">Sushis</a></li>
+         <li><a href="#bebidas">Bebidas</a></li>
+         <li><a href="#local">Localização</a></li> 
+        </ul>
+      </div>
+    </div>
+    <div data-role="header" class="menu" data-position="fixed">
+    	<a href="#menu"><img src="menu.png"></a>
+      <h1>Maki</h1>
+    </div>
+    <div data-role="content" class="bg tela">
+      <div>
+        <div>
+          <h1>Olá, somos a Maki :)</h1>
+          <img src="home.jpg">
+          <p>
+            Olá, somos a Maki!<br>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+          </p>
         </div>
-     </div>
-     	
-	<div data-role="header">
-    	<a href="#panel" id="teste-de-id">Menu</a>
-        
-		<h1>Home</h1>
-	</div>
-	<div data-role="content">	
-		<ul data-role="listview">
-			<li><a href="#page2">Sobre o App</a></li>
-            <li><a href="#page3">Considerações</a></li>
-			<li><a href="#page4">Conclusões</a></li>
-            <li><a href="#page5">Próximos objetivos</a></li>
-		</ul>		
-	</div>
-	<div data-role="footer">
-		<h4>Rodapé</h4>
-	</div>
-</div>
-<!-- página 2 - Sobre o App -->
-<div data-role="page" id="page2">
-	<div data-role="header">
-		<h1>Sobre o App</h1>
-	</div>
-	<div data-role="content">	
-		Este é meu primeiro app a ser criado. Faz parte de meu estudo inicial neste que para mim ainda é novidade profissionalmente.		
-	</div>
-	<div data-role="footer">
-		<h4>Rodapé</h4>
-	</div
-></div>
+        <div>
+          <a href="#menu" class="bt-cardapio">Confira nosso Cardápio!</a>
+        </div>
+      </div>
+    </div>
+    <div data-role="footer" class="footer"  data-position="fixed">
+      <a href="#contato">Pedido e Contato</a>
+    </div>
+  </div>
 
-<!-- página 3 - Considerações -->
-<div data-role="page" id="page3">
-	<div data-role="header">
-		<h1>Considerações</h1>
-	</div>
-	<div data-role="content">	
-		Content		
-	</div>
-	<div data-role="footer">
-		<h4>Rodapé</h4>
-	</div>
-</div>
+  <!-- PÁGINA 2 -->
+  <div data-role="page" id="temakis">
+    <div data-role="panel" id="menu2">
+      <div data-role="content">
+        <ul data-position="fixed">
+         <li><a href="#home"><img class="logo" src="logo.png"></a></li>
+         <li><a href="#temakis" style="color: #ffd46e !important" >Temakis</a></li>
+         <li><a href="#sashimis">Sashimis</a></li>
+         <li><a href="#sushis">Sushis</a></li>
+         <li><a href="#bebidas">Bebidas</a></li>
+         <li><a href="#local">Localização</a></li> 
+        </ul>
+      </div>
+    </div>
+    <div data-role="header" class="menu" data-position="fixed" class="cabecalho">
+      <a href="#menu2"><img src="menu.png"></a>
+      <h1>Maki</h1>
+    </div>
+    <div data-role="content" class="bg tela">
+      <div>
+        <div>
+          <h1>Temakis</h1>
+          <img src="temaki.jpg">
+          <!-- LISTA -->
+          <ul>
+            <li>
+              <p>California 
+                <a href="#temaki-california" data-rel="popup" class="pop-info"></a>
+                <a href="#" class="preco">R$9,00</a>
+              </p>
+            </li>
+            <li>
+              <p>Skin 
+                <a href="#temaki-skin" data-rel="popup" class="pop-info"></a>
+                <a href="#" class="preco">R$10,00</a>
+              </p>
+            </li>
+            <li>
+              <p>Salmão 
+                <a href="#temaki-salmao" data-rel="popup" class="pop-info"></a>
+                <a href="#" class="preco">R$12,00</a>
+              </p>
+            </li>
+            <li>
+              <p>Ginger 
+                <a href="#temaki-ginger" data-rel="popup" class="pop-info"></a>
+                <a href="#" class="preco">R$12,00</a>
+              </p>
+            </li>
+            <li>
+              <p>Shrimp 
+                <a href="#temaki-shrimp" data-rel="popup" class="pop-info"></a>
+                <a href="#" class="preco">R$15,00</a>
+              </p>
+            </li>
+            <li>
+              <p>Shimeji 
+                <a href="#temaki-shimeji" data-rel="popup" class="pop-info"></a>
+                <a href="#" class="preco">R$15,00</a>
+              </p>
+            </li>
+          </ul>
+        </div>
 
-<!-- página 4 - Conclusões -->
-<div data-role="page" id="page4">
-	<div data-role="header">
-		<h1>Conclusões</h1>
-	</div>
-	<div data-role="content">	
-		Content		
-	</div>
-	<div data-role="footer">
-		<h4>Rodapé</h4>
-	</div>
-</div>
+        <!-- POPUPS -->
+        <div data-role="popup" id="temaki-california" class="popup">
+          <div data-role="content">
+            <img src="temaki-1.png">
+          	<p>Kani, fruta de época, pepino e gergelim</p>
+          </div>
+        </div>
 
-<!-- página 5 - Próximos objetivos -->
-<div data-role="page" id="page5">
-	<div data-role="header">
-		<h1>Próximos objetivos</h1>
-	</div>
-	<div data-role="content">	
-		Content		
-	</div>
-	<div data-role="footer">
-		<h4>Rodapé</h4>
-	</div>
-</div>
+        <div data-role="popup" id="temaki-skin" class="popup">
+          <div data-role="content">
+            <img src="temaki-2.png">
+            <p>Skin e truta salmão grelhado, cream cheese, molho tarê, cebolinha e gergelim</p>
+          </div>
+        </div>
+
+        <div data-role="popup" id="temaki-salmao" class="popup">
+          <div data-role="content">
+            <img src="temaki-3.png">
+            <p>Salmão e cebolinha, opção: maionese ou cream cheese.</p>
+          </div>
+        </div>
+
+        <div data-role="popup" id="temaki-ginger" class="popup">
+          <div data-role="content">
+            <img src="temaki-4.png">
+            <p>Salmão e cebolinha, gengibre e cream cheese.</p>
+          </div>
+        </div>
+
+        <div data-role="popup" id="temaki-shrimp" class="popup">
+          <div data-role="content">
+            <img src="temaki-5.png">
+            <p>Camarão, maionese, alface, cebolinha e gergelim</p>
+          </div>
+        </div>
+
+        <div data-role="popup" id="temaki-shimeji" class="popup">
+          <div data-role="content">
+            <img src="temaki-6.png">
+            <p>Shimeji, cream cheese, cebolinha e molho tarê</p>
+          </div>
+        </div>               
+      </div>
+    </div>
+    <div data-role="footer" class="footer"  data-position="fixed">
+      <a href="#contato">Pedido e Contato</a>
+    </div>
+  </div>
+
+  <!-- PÁGINA 3 -->
+  <div data-role="page" id="sashimis">
+    <div data-role="panel" id="menu3">
+      <div data-role="content">
+        <ul data-position="fixed">
+         <li><a href="#home"><img class="logo" src="logo.png"></a></li>
+         <li><a href="#temakis">Temakis</a></li>
+         <li><a href="#sashimis" style="color: #ffd46e !important"  >Sashimis</a></li>
+         <li><a href="#sushis">Sushis</a></li>
+         <li><a href="#bebidas">Bebidas</a></li>
+         <li><a href="#local">Localização</a></li> 
+        </ul>
+      </div>
+    </div>
+    <div data-role="header" class="menu" data-position="fixed" class="cabecalho">
+      <a href="#menu3"><img src="menu.png"></a>
+      <h1>Maki</h1>
+    </div>
+    <div data-role="content" class="bg tela">
+      <div>
+        <div>
+          <h1>Sashimis</h1>
+          <img src="sashimi.jpg">
+          <ul>
+            <li><p>Salmão <a href="#sashimi-pop" data-rel="popup" class="pop-info"></a><a href="#" class="preco">R$7,00</a></p></li>
+            <li><p>Peixe Prego <a href="#sashimi-pop" data-rel="popup" class="pop-info"></a><a href="#" class="preco">R$7,00</a></p></li>
+            <li><p>Atum <a href="#sashimi-pop" data-rel="popup" class="pop-info"></a><a href="#" class="preco">R$7,00</a></p></li>
+            <li><p>Polvo <a href="#sashimi-pop" data-rel="popup" class="pop-info"></a><a href="#" class="preco">R$7,00</a></p></li>
+            <li><p>Lula <a href="#sashimi-pop" data-rel="popup" class="pop-info"></a><a href="#" class="preco">R$7,00</a></p></li>
+          </ul>
+        </div>
+
+        <!-- POPUPS -->
+        <div data-role="popup" id="sashimi-pop" class="popup">
+          <div data-role="content">
+            <img src="sashimi.png">
+            <p>Sashimis mistos</p>
+          </div>
+        </div>       
+      </div>
+    </div>
+    <div data-role="footer" class="footer"  data-position="fixed">
+      <a href="#contato">Pedido e Contato</a>
+    </div>
+  </div>
+
+  <!-- PÁGINA 4 -->
+  <div data-role="page" id="sushis">
+    <div data-role="panel" id="menu4">
+      <div data-role="content">
+        <ul data-position="fixed">
+         <li><a href="#home"><img class="logo" src="logo.png"></a></li>
+         <li><a href="#temakis">Temakis</a></li>
+         <li><a href="#sashimis">Sashimis</a></li>
+         <li><a href="#sushis" style="color: #ffd46e !important"  >Sushis</a></li>
+         <li><a href="#bebidas">Bebidas</a></li>
+         <li><a href="#local">Localização</a></li> 
+        </ul>
+      </div>
+    </div>
+    <div data-role="header" class="menu" data-position="fixed" class="cabecalho">
+      <a href="#menu4"><img src="menu.png"></a>
+      <h1>Maki</h1>
+    </div>
+    <div data-role="content" class="bg tela">
+      <div>
+        <div>
+          <h1>Sushis</h1>
+          <img src="sushi.jpg">
+          <!-- LISTA -->
+          <ul>
+            <li>
+              <p>Salmão 
+                <a href="#sushi" data-rel="popup" class="pop-info"></a>
+                <a href="#" class="preco">R$27,00</a>
+              </p>
+            </li>
+            <li>
+              <p>Peixe Prego 
+                <a href="#sushi" data-rel="popup" class="pop-info"></a>
+                <a href="#" class="preco">R$24,00</a>
+              </p>
+            </li>
+            <li>
+              <p>Atum 
+                <a href="#sushi" data-rel="popup" class="pop-info"></a>
+                <a href="#" class="preco">R$23,00</a>
+              </p>
+            </li>
+            <li>
+              <p>Polvo 
+                <a href="#sushi" data-rel="popup" class="pop-info"></a>
+                <a href="#" class="preco">R$30,00</a>
+              </p>
+            </li>
+            <li>
+              <p>Lula 
+                <a href="#sushi" data-rel="popup" class="pop-info"></a>
+                <a href="#" class="preco">R$34,00</a>
+              </p>
+            </li>
+          </ul>
+        </div>  
+        <!-- POPUPS -->
+        <div data-role="popup" id="sushi" class="popup">
+          <div data-role="content">
+            <img src="sushi.png">
+            <p>Sushis mistos + califórnia uramaki + enrolados empanados + gunka jyo</p>
+          </div>
+        </div>      
+      </div>
+    </div>
+    <div data-role="footer" class="footer"  data-position="fixed">
+      <a href="#contato">Pedido e Contato</a>
+    </div>
+  </div>
+
+  <!-- PÁGINA 5 -->
+  <div data-role="page" id="bebidas">
+    <div data-role="panel" id="menu5">
+      <div data-role="content">
+        <ul data-position="fixed">
+         <li><a href="#home"><img class="logo" src="logo.png"></a></li>
+         <li><a href="#temakis">Temakis</a></li>
+         <li><a href="#sashimis">Sashimis</a></li>
+         <li><a href="#sushis">Sushis</a></li>
+         <li><a href="#bebidas" style="color: #ffd46e !important"  >Bebidas</a></li>
+         <li><a href="#local">Localização</a></li> 
+        </ul>
+      </div>
+    </div>
+    <div data-role="header" class="menu" data-position="fixed" class="cabecalho">
+      <a href="#menu5"><img src="menu.png"></a>
+      <h1>Maki</h1>
+    </div>
+    <div data-role="content" class="bg tela">
+      <h1>Bebidas</h1>
+      <img src="bebidas.jpg">
+      <ul>
+        <li><p>Sucos Naturais <a href="#sucos" data-rel="popup" class="pop-info"></a><a href="#" class="preco">R$7,00</a></p></li>
+        <li><p>Refrigerantes <a href="#refri" data-rel="popup" class="pop-info"></a><a href="#" class="preco">R$7,00</a></p></li>
+        <li><p>Cervejas <a href="#cervejas" data-rel="popup" class="pop-info"></a><a href="#" class="preco">R$7,00</a></p></li>            
+        <li><p>Saquês <a href="#saques" data-rel="popup" class="pop-info"></a><a href="#" class="preco">R$7,00</a></p></li>
+      </ul>
+    </div>
+    <!-- POPUPS -->
+        <div data-role="popup" id="sucos" class="popup">
+          <div data-role="content">
+            <img src="sucos.jpg">
+            <p>Laranja, Abacaxi, Melancia, Morango, Caju, Maracujá, Uva, Pêssego, Limão e Acerola</p>
+          </div>
+        </div>
+
+        <div data-role="popup" id="refri" class="popup">
+          <div data-role="content">
+            <img src="refri.jpg">
+            <p>Coca-Cola, Fanta (laranja, uva), Sprite, Guaraná Antártica</p>
+          </div>
+        </div>
+
+        <div data-role="popup" id="cervejas" class="popup">
+          <div data-role="content">
+            <img src="cerveja.jpg">
+            <p>Skol, Serra Malte, Original, Antártica, Heinneken e Bhrama</p>
+          </div>
+        </div>
+
+        <div data-role="popup" id="saques" class="popup">
+          <div data-role="content">
+            <img src="saque.jpg">
+            <p>Saquê Azuma</p>
+          </div>
+        </div>
+    <div data-role="footer" class="footer"  data-position="fixed">
+      <a href="#contato">Pedido e Contato</a>
+    </div>
+  </div>
+
+  <!-- PÁGINA 6 -->
+  <div data-role="page" id="local">
+    <div data-role="panel" id="menu6">
+      <div data-role="content">
+        <ul data-position="fixed">
+         <li><a href="#home"><img class="logo" src="logo.png"></a></li>
+         <li><a href="#temakis">Temakis</a></li>
+         <li><a href="#sashimis">Sashimis</a></li>
+         <li><a href="#sushis">Sushis</a></li>
+         <li><a href="#bebidas">Bebidas</a></li>
+         <li><a href="#local" style="color: #ffd46e !important"  >Localização</a></li> 
+        </ul>
+      </div>
+    </div>
+    <div data-role="header" class="menu" data-position="fixed" class="cabecalho">
+      <a href="#menu6"><img src="menu.png"></a>
+      <h1>Maki</h1>
+    </div>
+    <div data-role="content" class="bg tela">
+     <h1>Localização</h1>
+     <img id="mapa" src="https://maps.googleapis.com/maps/api/staticmap?center=barueri&amp;zoom=13&amp;size=288x300&amp;markers=barueri&amp;sensor=true"  width="288" height="300">
+     <p>
+      Rua Barueri, 52 - Vila Osasco - Jandira - SC<br>
+      CEP: 00000-000
+     </p>
+    </div>
+    <div data-role="footer" class="footer"  data-position="fixed">
+      <a href="#contato">Pedido e Contato</a>
+    </div>
+  </div>
+
+  <!-- PÁGINA 7 -->
+  <div data-role="page" id="contato">
+    <div data-role="panel" id="menu7">
+      <div data-role="content">
+        <ul data-position="fixed">
+         <li><a href="#home"><img class="logo" src="logo.png"></a></li>
+         <li><a href="#temakis">Temakis</a></li>
+         <li><a href="#sashimis">Sashimis</a></li>
+         <li><a href="#sushis">Sushis</a></li>
+         <li><a href="#bebidas">Bebidas</a></li>
+         <li><a href="#local">Localização</a></li>
+        </ul>
+      </div>
+    </div>
+    <div data-role="header" class="menu" data-position="fixed" class="cabecalho">
+      <a href="#menu7"><img src="menu.png"></a>
+      <h1>Maki</h1>
+    </div>
+    <div data-role="content" class="bg tela">
+     <h1>Contato</h1>
+      <form>
+        <label for="textinput">Nome:</label>
+        <input type="text" name="textinput" id="textinput" />
+              
+        <label for="textinput">Email:</label>
+        <input type="text" name="textinput" id="textinput" />
+
+        <label for="">Mensagem:</label>
+        <textarea></textarea>
+
+        <a href="#" id="enviar">Enviar mensagem!</a>
+      </form> 
+    </div>
+  </div>
 
 </body>
 </html>
